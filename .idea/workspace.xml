@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="71e1d760-6b39-488f-a2a4-d62db83097db" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="23TTZVAt7tMFA0y33XUfiKxPki4" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Bahaa\AndroidStudioProjects\ultron\bin\core\services" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="ultron.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/bin/ultron.dart" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Dart Command Line App.ultron.dart" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="71e1d760-6b39-488f-a2a4-d62db83097db" name="Default Changelist" comment="" />
+      <created>1641757132708</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1641757132708</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1642959280865">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1642959280865" />
+    <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1643250389567">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1643250389567" />
+    <state width="1476" height="294" key="GridCell.Tab.0.bottom" timestamp="1641772602410">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1476" height="294" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1641772602410" />
+    <state width="1476" height="294" key="GridCell.Tab.0.center" timestamp="1641772602410">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1476" height="294" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1641772602410" />
+    <state width="1476" height="294" key="GridCell.Tab.0.left" timestamp="1641772602410">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1476" height="294" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1641772602410" />
+    <state width="1476" height="294" key="GridCell.Tab.0.right" timestamp="1641772602410">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1476" height="294" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1641772602410" />
+    <state x="277" y="57" key="SettingsEditor" timestamp="1641760944686">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1641760944686" />
+    <state x="474" y="145" width="588" height="534" key="find.popup" timestamp="1642725318413">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="474" y="145" width="588" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1642725318413" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1642965055016">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1642965055016" />
+  </component>
+</project>
