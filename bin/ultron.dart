@@ -4,11 +4,13 @@ import 'package:collection/collection.dart';
 import 'package:recase/recase.dart';
 import 'core/console.dart';
 import 'core/resources/constants.dart';
+import 'core/services/bloc_service.dart';
 import 'core/services/general_service.dart';
 import 'core/services/podo_service.dart';
 import 'core/services/service.dart';
-import 'core/stubs/podo_stub.dart';
-import 'core/stubs/podo_exports_stub.dart';
+import 'core/stubs/bloc/bloc_stub.dart';
+import 'core/stubs/podo/podo_stub.dart';
+import 'core/stubs/podo/exports_stub.dart';
 import 'core/utils/di.dart';
 import 'menu.dart';
 import 'models/podo.dart';
@@ -23,6 +25,12 @@ List<UltronCommand> _availableCommands = [
       arguments: ['-h', '-f'],
       type: 'make',
       action: _makePODO),
+  UltronCommand(
+      name: 'bloc',
+      optionsCount: 1,
+      arguments: ['-h', '-f'],
+      type: 'make',
+      action: _makeBloc),
 ];
 
 Future<void> main(List<String> arguments) async {
@@ -62,7 +70,7 @@ Future<void> main(List<String> arguments) async {
 }
 
 Future<void> _makePODO(List<String> arguments) async {
-  PodoService podoService = DependencyInjector.get<PodoService>();
+  final PodoService podoService = DependencyInjector.get<PodoService>();
 
   _argParser.addFlag(helpFlag,
       abbr: 'h',
@@ -75,9 +83,9 @@ Future<void> _makePODO(List<String> arguments) async {
 
   final ArgResults argResults = _argParser.parse(arguments);
 
-  _checkArguments(argResults.arguments, _argParser.usage);
+  //_checkArguments(argResults.arguments, _argParser.usage);
 
-  bool? hasForceFlag = argResults[forceFlag];
+  //bool? hasForceFlag = argResults[forceFlag];
 
   _checkHelpFlag(argResults[helpFlag], _argParser.usage);
 
@@ -85,12 +93,35 @@ Future<void> _makePODO(List<String> arguments) async {
       await podoService.readParamsFromYaml(path: podoManifestPath);
 
   for (PODO podo in availablePodos) {
-    await podoService.makeSinglePODO(
-        podo: podo, hasForceFlag: hasForceFlag ?? false);
+    await podoService.makeSinglePODO(podo: podo, hasForceFlag: true);
   }
   await podoService.exportPODODependencies(
       dependencies: podoService.listPodoFileNames(availablePodos));
   await podoService.createPODOGeneratedFiles();
+}
+
+Future<void> _makeBloc(List<String> arguments) async {
+  final BlocService blocService = DependencyInjector.get<BlocService>();
+
+  _argParser.addFlag(helpFlag,
+      abbr: 'h', help: 'Creates a new BLoC in your project.', negatable: false);
+  _argParser.addFlag(forceFlag,
+      abbr: 'f',
+      help: 'Creates a new BLoC even if it already exists.',
+      negatable: false);
+
+  final ArgResults argResults = _argParser.parse(arguments);
+
+  _checkArguments(argResults.arguments, _argParser.usage);
+
+  bool? hasForceFlag = argResults[forceFlag];
+
+  _checkHelpFlag(argResults[helpFlag], _argParser.usage);
+
+  String className = argResults.arguments.first;
+
+  await blocService.makeSingleBloc(
+      className: className, hasForceFlag: hasForceFlag ?? false);
 }
 
 void _checkArguments(List<String> arguments, String usage) {

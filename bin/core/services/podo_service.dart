@@ -4,8 +4,8 @@ import 'package:yaml/yaml.dart';
 import '../../models/podo.dart';
 import '../console.dart';
 import '../resources/constants.dart';
-import '../stubs/podo_exports_stub.dart';
-import '../stubs/podo_stub.dart';
+import '../stubs/podo/exports_stub.dart';
+import '../stubs/podo/podo_stub.dart';
 import 'service.dart';
 
 class PodoService extends UltronService {

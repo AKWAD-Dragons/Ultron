@@ -7,6 +7,7 @@ const String forceFlag = 'force';
 const String yamlPath = 'pubspec.yaml';
 const String uiFolder = 'lib/UI';
 const String podoFolder = 'lib/podo';
+const String blocFolder = 'lib/bloc';
 const String podoManifestPath = podoFolder + '/manifest.yaml';
 
 //keys
