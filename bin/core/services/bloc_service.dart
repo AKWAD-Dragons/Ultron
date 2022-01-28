@@ -9,7 +9,8 @@ import '../stubs/bloc/state_stub.dart';
 import 'service.dart';
 
 class BlocService extends UltronService {
-  /// Creates a new PODO.
+  /// Creates a new BLoC directory that includes Event, State and BLoC files
+  /// In addition to an export file to provide dependencies across directory.
   Future<void> makeSingleBloc(
       {required className, bool hasForceFlag = false}) async {
     ReCase rc = ReCase(className);
